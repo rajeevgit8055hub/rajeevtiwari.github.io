@@ -501,6 +501,39 @@
   </div>
 </section>
 
+<!-- Skills Icon Section -->
+<section class="skill-section-container">
+  <div class="skills-grid">
+    <!-- 1st row -->
+    <div class="skill-item"><img src="images/Office 365.svg" alt="Office 365"><div class="skill-name">Office 365</div></div>
+    <div class="skill-item"><img src="images/Word.svg" alt="Word"><div class="skill-name">Word</div></div>
+    <div class="skill-item"><img src="images/Excel.svg" alt="Excel"><div class="skill-name">Excel</div></div>
+    <div class="skill-item"><img src="images/Power Query.svg" alt="Power Query"><div class="skill-name">Power Query</div></div>
+    <div class="skill-item"><img src="images/Power Pivot.svg" alt="Power Pivot"><div class="skill-name">Power Pivot</div></div>
+    <div class="skill-item"><img src="images/MIS.svg" alt="MIS"><div class="skill-name">MIS</div></div>
+    <div class="skill-item"><img src="images/PowerPoint.svg" alt="Power Point"><div class="skill-name">Power Point</div></div>
+    <div class="skill-item"><img src="images/Access.svg" alt="Access"><div class="skill-name">Access</div></div>
+    <div class="skill-item"><img src="images/Outlook.svg" alt="Outlook"><div class="skill-name">Outlook</div></div>
+    <div class="skill-item"><img src="images/Publisher.svg" alt="Publisher"><div class="skill-name">Publisher</div></div>
+    <div class="skill-item"><img src="images/OneNote.svg" alt="OneNote"><div class="skill-name">OneNote</div></div>
+    
+    <!-- 2nd row -->
+    <div class="skill-item"><img src="images/Power BI.svg" alt="Power BI"><div class="skill-name">Power BI</div><div class="skill-level">Pending</div></div>
+    <div class="skill-item"><img src="images/HTML5.svg" alt="HTML5"><div class="skill-name">HTML5</div></div>
+    <div class="skill-item"><img src="images/CSS.svg" alt="CSS"><div class="skill-name">CSS</div></div>
+    <div class="skill-item"><img src="images/Tally Prime.png" alt="Tally Prime"><div class="skill-name">Tally Prime</div></div>
+    <div class="skill-item"><img src="images/Google Sheets.svg" alt="Google Sheets"><div class="skill-name">Google Sheets</div></div>
+    <div class="skill-item"><img src="images/OpenAI.svg" alt="Open AI"><div class="skill-name">Open AI</div></div>
+    <div class="skill-item"><img src="images/Canva.svg" alt="Canva"><div class="skill-name">Canva</div></div>
+    <div class="skill-item"><img src="images/SQL.svg" alt="SQL"><div class="skill-name">SQL</div><div class="skill-level">In Progress</div></div>
+    <div class="skill-item"><img src="images/PostgreSQL.svg" alt="PostgreSQL"><div class="skill-name">PostgreSQL</div><div class="skill-level">In Progress</div></div>
+    <div class="skill-item"><img src="images/CHMT.svg" alt="CHMT"><div class="skill-name">CHMT</div><div class="skill-level">Pending</div></div>
+    <div class="skill-item"><img src="images/VBA.svg" alt="Excel VBA"><div class="skill-name">Excel VBA</div><div class="skill-level">Pending</div></div>
+  </div>
+</section>
+<!-- Skills Section End -->
+
+<!-- Skill Styles -->
 <style>
   .gradient-teal-red {
     background: linear-gradient(90deg, lime, red);
@@ -514,69 +547,52 @@
     font-size: inherit;
     margin-left: 4px;
   }
-</style>
-
-<!-- my skill icon related css-->
-<style>
-  .skill-section-container {
-    background: transparent;
-    padding: 10px 20px;
-    text-align: center;
-  }
 
   .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-    gap: 25px;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
+  display: grid;
+  grid-template-columns: repeat(11, 1fr); /* Exactly 11 columns with equal width */
+  gap: 15px; /* Button ke beech ki spacing */
+  max-width: 1200px; /* Aap apni site ke hisaab se adjust kar sakte hain */
+  margin: auto;
+}
 
-  .skill-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 14px;
-    color: white;
-  }
+.skill-item {
+  background-color: #000; /* Dark black background */
+  border-radius: 12px;
+  padding: 14px 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  .skill-item img {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 6px;
-    object-fit: contain;
-  }
+.skill-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.15);
+}
+
+.skill-item img {
+  width:80px;
+  height: 40px;
+  margin-bottom: 6px;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill-name {
+  font-size:15px;
+  font-weight: 400;
+  color: white;
+  white-space: nowrap; /* Naam ek line me rahe */
+}
+
+.skill-level {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 2px;
+}
 </style>
-
-<!-- skill icons and name -->
-<section class="skill-section-container">
-  <div class="skills-grid">
-        <!-- Skills -->
-             <div class="skill-item"><img src="images/Office 365.svg" alt="Office 365"><span>Office 365</span></div>
-             <div class="skill-item"><img src="images/Word.svg" alt="Word"><span>Word</span></div>
-             <div class="skill-item"><img src="images/Excel.svg" alt="Excel"><span>Excel</span></div> 
-             <div class="skill-item"><img src="images/Power Query.svg" alt="Power Query"><span>Power Query</span></div>
-             <div class="skill-item"><img src="images/Power Pivot.svg" alt="Power Pivot"><span>Power Pivot</span></div>
-             <div class="skill-item"><img src="images/MIS.svg" alt="MIS"><span>MIS</span></div>
-             <div class="skill-item"><img src="images/PowerPoint.svg" alt="Power Point"><span>Power Point</span></div>
-             <div class="skill-item"><img src="images/Access.svg" alt="Access"><span>Access</span></div>
-             <div class="skill-item"><img src="images/Outlook.svg" alt="Outlook"><span>Outlook</span></div>
-             <div class="skill-item"><img src="images/Publisher.svg" alt="Publisher"><span>Publisher</span></div>
-             <div class="skill-item"><img src="images/OneNote.svg" alt="OneNote"><span>OneNote</span></div>
-             <div class="skill-item"><img src="images/Power BI.svg" alt="Power BI"><span>Power BI: pending</span></div>
-             <div class="skill-item"><img src="images/HTML5.svg" alt="HTML5"><span>HTML5</span></div>
-             <div class="skill-item"><img src="images/CSS.svg" alt="CSS"><span>CSS</span></div>
-             <div class="skill-item"><img src="images/Tally Prime.png" alt="Tally Prime"><span>Tally Prime </span></div>
-             <div class="skill-item"><img src="images/Google Sheets.svg" alt="Google Sheets"><span>Google Sheets</span></div>
-             <div class="skill-item"><img src="images/OpenAI.svg" alt="Open AI"><span>Open AI</span></div>
-             <div class="skill-item"><img src="images/Canva.svg" alt="Canva"><span>Canva</span></div>
-             <div class="skill-item"><img src="images/SQL.svg" alt="SQL"><span>SQL: Processing</span></div>
-             <div class="skill-item"><img src="images/PostgreSQL.svg" alt="PostgreSQL"><span>PostgreSQL: Processing</span></div>
-             <div class="skill-item"><img src="images/CHMT.svg" alt="CHMT"><span>CHMT: Pending</span></div>
-             <div class="skill-item"><img src="images/VBA.svg" alt="Excel VBA"><span>Excel VBA: pending</span></div>                 
-  </div>
-</section>
-<!-- Skills and skills emoji Section End -->
+<!-- Skills Section End -->
 
     <!-- Resume & Experience Section Start -->
 <section class="ftco-section ftco-no-pb" id="Resume-section">
