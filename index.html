@@ -518,7 +518,7 @@
 <!-- Skills Icon Section -->
 <section class="skill-section-container">
   <div class="skills-grid">
-    <!-- 1st row -->
+    <!-- 1st Row (8 skills) -->
     <div class="skill-item"><img src="images/Office 365.svg" alt="Office 365"><div class="skill-name">Office 365</div></div>
     <div class="skill-item"><img src="images/Word.svg" alt="Word"><div class="skill-name">Word</div></div>
     <div class="skill-item"><img src="images/Excel.svg" alt="Excel"><div class="skill-name">Excel</div></div>
@@ -527,28 +527,33 @@
     <div class="skill-item"><img src="images/MIS.svg" alt="MIS"><div class="skill-name">MIS</div></div>
     <div class="skill-item"><img src="images/PowerPoint.svg" alt="Power Point"><div class="skill-name">Power Point</div></div>
     <div class="skill-item"><img src="images/Access.svg" alt="Access"><div class="skill-name">Access</div></div>
+
+    <!-- 2nd Row (8 skills) -->
     <div class="skill-item"><img src="images/Outlook.svg" alt="Outlook"><div class="skill-name">Outlook</div></div>
     <div class="skill-item"><img src="images/Publisher.svg" alt="Publisher"><div class="skill-name">Publisher</div></div>
     <div class="skill-item"><img src="images/OneNote.svg" alt="OneNote"><div class="skill-name">OneNote</div></div>
-    
-    <!-- 2nd row -->
     <div class="skill-item"><img src="images/Power BI.svg" alt="Power BI"><div class="skill-name">Power BI</div><div class="skill-level">Pending</div></div>
     <div class="skill-item"><img src="images/HTML5.svg" alt="HTML5"><div class="skill-name">HTML5</div></div>
     <div class="skill-item"><img src="images/CSS.svg" alt="CSS"><div class="skill-name">CSS</div></div>
     <div class="skill-item"><img src="images/Tally Prime.png" alt="Tally Prime"><div class="skill-name">Tally Prime</div></div>
     <div class="skill-item"><img src="images/Google Sheets.svg" alt="Google Sheets"><div class="skill-name">Google Sheets</div></div>
+
+    <!-- 3rd Row (8 skills) -->
     <div class="skill-item"><img src="images/OpenAI.svg" alt="Open AI"><div class="skill-name">Open AI</div></div>
     <div class="skill-item"><img src="images/Canva.svg" alt="Canva"><div class="skill-name">Canva</div></div>
     <div class="skill-item"><img src="images/SQL.svg" alt="SQL"><div class="skill-name">SQL</div><div class="skill-level">In Progress</div></div>
     <div class="skill-item"><img src="images/PostgreSQL.svg" alt="PostgreSQL"><div class="skill-name">PostgreSQL</div><div class="skill-level">In Progress</div></div>
     <div class="skill-item"><img src="images/CHMT.svg" alt="CHMT"><div class="skill-name">CHMT</div><div class="skill-level">Pending</div></div>
     <div class="skill-item"><img src="images/VBA.svg" alt="Excel VBA"><div class="skill-name">Excel VBA</div><div class="skill-level">Pending</div></div>
+    <div class="skill-item"><img src="images/IoT.svg" alt="IoT"><div class="skill-name">IoT</div><div class="skill-level">Pending</div></div>
+    <div class="skill-item"><img src="images/Python.svg" alt="Python"><div class="skill-name">Python</div><div class="skill-level">Pending</div></div>
   </div>
 </section>
 <!-- Skills Section End -->
 
 <!-- Skill Styles -->
 <style>
+  /* Gradient text (optional use) */
   .gradient-teal-red {
     background: linear-gradient(90deg, lime, red);
     -webkit-background-clip: text;
@@ -557,57 +562,59 @@
   }
 
   .normal-color {
-    color: initial; 
+    color: initial;
     font-size: inherit;
     margin-left: 4px;
   }
 
+  /* Main grid styling: Now using 8 columns */
   .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(11, 1fr); /* Exactly 11 columns with equal width */
-  gap: 15px; /* Button ke beech ki spacing */
-  max-width: 1200px; /* Aap apni site ke hisaab se adjust kar sakte hain */
-  margin: auto;
-}
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 3 rows × 8 columns = 24 items */
+    gap: 15px;
+    max-width: 1200px;
+    margin: auto;
+  }
 
-.skill-item {
-  background-color: #000; /* Dark black background */
-  border-radius: 12px;
-  padding: 14px 8px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+  /* Skill box design */
+  .skill-item {
+    background-color: #000; /* Dark black background */
+    border-radius: 12px;
+    padding: 14px 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 
-.skill-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.15);
-}
+  .skill-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.15);
+  }
 
-.skill-item img {
-  width:80px;
-  height: 40px;
-  margin-bottom: 6px;
-  object-fit: contain;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .skill-item img {
+    width: 80px;
+    height: 40px;
+    margin-bottom: 6px;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.skill-name {
-  font-size:15px;
-  font-weight: 400;
-  color: white;
-  white-space: nowrap; /* Naam ek line me rahe */
-}
+  .skill-name {
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    white-space: nowrap;
+  }
 
-.skill-level {
-  font-size: 12px;
-  color: #aaa;
-  margin-top: 2px;
-}
+  .skill-level {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 2px;
+  }
 </style>
 <!-- Skills Section End -->
-
+ 
     <!-- Resume & Experience Section Start -->
 <section class="ftco-section ftco-no-pb" id="Resume-section">
   <div class="container">
