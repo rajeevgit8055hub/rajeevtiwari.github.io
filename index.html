@@ -99,14 +99,15 @@
         transform: scale(1.1);
       }
 
-      .name-gradient {
-        background: linear-gradient(90deg, aqua);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-family: 'Segoe Script', 'Dancing Script', cursive;
-        font-weight: 300;
-        font-style: italic;
-      }
+.name-gradient {
+  background: linear-gradient(90deg, #00ffff, #00ff99, #66ffcc, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Segoe Script', 'Dancing Script', cursive;
+  font-weight: 300;
+  font-style: italic;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.7); /* Optional shine glow */
+}
 
 /* Navigation bar alignment and spacing start */
 .navbar-nav {
@@ -231,6 +232,12 @@
       <div class="container">
         <a class="navbar-brand" href="index.html">
 <div style="display: inline-block; position: relative; font-size: 21px;">
+ <!-- Profile image in circle -->
+  <span style="display: inline-block; width: 40px; height: 40px; border-radius: 50%; overflow: hidden; vertical-align: middle; margin-right: 6px;">
+    <img src="images/rajeevprofile.jpg" alt="Profile" style="width: 100%; height: 100%; object-fit: cover;">
+  </span>
+
+  <!-- Name and verification -->
   <span class="name-gradient" style="display: inline-block;">Rajeev Tiwari</span>
   <span style="color:lime; position: relative; top: 2px;">&#10003;</span>
   <div style="position:absolute; top:100%; left:55%; transform:translateX(-50%); font-size:11px; color:lime; font-weight:300; margin-top:-2px;">
