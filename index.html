@@ -99,15 +99,36 @@
         transform: scale(1.1);
       }
 
+/* Gradient profile verified name start */
 .name-gradient {
-  background: linear-gradient(90deg, #00ffff, #00ff99, #66ffcc, #00ffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
   font-family: 'Segoe Script', 'Dancing Script', cursive;
   font-weight: 300;
   font-style: italic;
-  text-shadow: 0 0 5px rgba(0, 255, 255, 0.7); /* Optional shine glow */
+
+  /* Gradient background for shine */
+  background: linear-gradient(90deg, #00ffff, #00ff99, #66ffcc, #00ffff);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Animation for moving shine effect */
+  animation: shine 2s linear infinite;
+
+  /* Ye line shadow (chamak) deti hai */
+  text-shadow: 0 0 6px rgba(0, 255, 255, 0.6);
 }
+
+@keyframes shine {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+/* Gradient profile verified name end*/
 
 /* Navigation bar alignment and spacing start */
 .navbar-nav {
@@ -233,9 +254,9 @@
         <a class="navbar-brand" href="index.html">
 <div style="display: inline-block; position: relative; font-size: 21px;">
  <!-- Profile image in circle -->
-  <span style="display: inline-block; width: 40px; height: 40px; border-radius: 50%; overflow: hidden; vertical-align: middle; margin-right: 6px;">
-    <img src="images/rajeevprofile.jpg" alt="Profile" style="width: 100%; height: 100%; object-fit: cover;">
-  </span>
+<span style="display: inline-block; width: 42px; height: 42px; padding: 1px; border-radius: 50%; background: linear-gradient(45deg, #00ffff, #66ffcc, #00ffff); overflow: hidden; vertical-align: middle; margin-right: 6px;">
+  <img src="images/rajeevprofile.jpg" alt="Profile" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block;">
+</span>
 
   <!-- Name and verification -->
   <span class="name-gradient" style="display: inline-block;">Rajeev Tiwari</span>
