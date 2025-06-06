@@ -19,6 +19,6 @@ You can also create your personal website by following this video and adding you
 
 ▶️ https://lnkd.in/dddW8T_w
 
-## 🖼️ Website Previews
+## 🖼️ Website Preview
 
-![Website Screenshot 1](./Website.png)
+![Website Screenshot 1](Website.png)
