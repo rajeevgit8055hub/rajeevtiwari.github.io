@@ -152,89 +152,90 @@
 /* Gradient profile verified name end*/
 
 /* Navigation bar alignment and spacing start */
-.navbar-nav {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  margin-left: auto;   /* branding से दूर */
-  gap: 5px;
-  overflow-x: auto;
-  white-space: nowrap;
-  width: auto;         /* width को auto करें */
-  max-width: 100%;     /* ज्यादा न बढ़े */
-}
+/* Navigation bar tight alignment */
+    .navbar-nav {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      margin-left: auto;
+      gap: 0px;                  /* ❌ No gap */
+      overflow-x: auto;
+      white-space: nowrap;
+      max-width: 100%;
+    }
 
-/* Responsive for smaller screens */
-@media (max-width: 991.98px) {
-  .navbar-nav {
-    flex-wrap: wrap;          /* छोटे स्क्रीन पर wrap की अनुमति */
-    justify-content: center;  /* बटन center में आयेंगे */
-    margin-left: 0;
-    overflow-x: visible;      /* scroll बंद */
-    white-space: normal;      /* wrap allowed */
-  }
-}
+    /* Responsive behavior */
+    @media (max-width: 991.98px) {
+      .navbar-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+        overflow-x: visible;
+        white-space: normal;
+      }
+    }
 
-/* Navigation bar button gradient styles */
-.nav-link span {
-  font-weight: 600;
-  font-size: 16px;
+    .nav-link span {
+      font-weight: 600;
+      font-size: 14px;
+      display: inline-block;
+      padding: 2px 4px;     /* Ultra tight */
+      margin: 0;
+      transition: all 0.3s ease;
+    }
+
+    /* Hover effect */
+    .nav-link:hover span {
+      transform: scale(1.05);
+      text-decoration: underline;
+    }
+
+    /* Gradient text styles */
+    .nav-gradient-home span {
+      background: linear-gradient(90deg, aqua, red);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .nav-gradient-about span {
+      background: linear-gradient(90deg, lime, mediumslateblue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .nav-gradient-skills span {
+      background: linear-gradient(90deg, orange, deeppink);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .nav-gradient-education span {
+      background: linear-gradient(90deg, cyan, red);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .nav-gradient-resume span {
+      background: linear-gradient(90deg, mediumslateblue, orangered);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .nav-gradient-certificates span {
+      background: linear-gradient(90deg, green, orangered);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .nav-gradient-contact span {
+      background: linear-gradient(90deg, red, aqua);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .nav-gradient-projects span {
+      background: linear-gradient(90deg, cyan, mediumslateblue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+.nav-gradient-programming-apocalypse span {
+  background: linear-gradient(90deg, aqua, mediumspringgreen);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: inline-block;
-  transition: all 0.3s ease;
-}
-
-.nav-gradient-home span {
-  background: linear-gradient(90deg, aqua, red);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.nav-gradient-about span {
-  background: linear-gradient(90deg, lime, mediumslateblue);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.nav-gradient-skills span {
-  background: linear-gradient(90deg, orange, deeppink);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.nav-gradient-education span {
-  background: linear-gradient(90deg, cyan, red);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.nav-gradient-resume span {
-  background: linear-gradient(90deg, mediumslateblue, orangered);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.nav-gradient-certificates span {
-  background: linear-gradient(90deg, green, orangered);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.nav-gradient-contact span {
-  background: linear-gradient(90deg, red, aqua);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.nav-gradient-projects span {
-  background: linear-gradient(90deg, cyan, mediumslateblue);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Hover effect */
-.nav-link:hover span {
-  transform: scale(1.05);
-  text-decoration: underline;
 }
 /* navigation bar button css end*/
 
@@ -356,6 +357,7 @@
             <li class="nav-item"><a href="#Resume-section" class="nav-link nav-gradient-resume"><span>Resume</span></a></li>
             <li class="nav-item"><a href="#Education-section" class="nav-link nav-gradient-education"><span>Education</span></a></li>
             <li class="nav-item"><a href="#project-section" class="nav-link nav-gradient-projects"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#programming-apocalypse-section" class="nav-link nav-gradient-programming-apocalypse"><span>Programming Apocalypse</span></a></li>
             <li class="nav-item"><a href="#certificates-section" class="nav-link nav-gradient-certificates"><span>Certificates</span></a></li>
             <li class="nav-item"><a href="#contact-section" class="nav-link nav-gradient-contact"><span>Contact</span></a></li>         
           </ul>
@@ -1336,6 +1338,150 @@
   }
 </style>
 <!-- Projects on github and linkedin end -->
+
+<!-- Programming Apocalypse Section start -->
+<section class="ftco-section" id="programming-apocalypse-section">
+  <div class="container">
+    <div class="row justify-content-center mb-4 pb-2">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Programming Apocalypse</h1>
+        <h2 class="mb-3">
+          <span class="gradient-programming-apocalypse">Programming Apocalypse</span>
+          <span class="normal-emoji">👾</span>
+        </h2>
+        <p class="mt-3 text-light">
+          🌀 From Code Carnage to Programming Apocalypse — a digital titan tale begins.<br>
+          Meet Script Samurais, Syntax Warriors & Runtime Titans on LinkedIn.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Programming Apocalypse Cards -->
+<section class="ftco-section pt-2 pb-2">
+  <div class="container">
+
+    <!-- Row 1 -->
+    <div class="row d-flex mb-3">
+
+      <!-- Pythonzilla vs Ghidorah -->
+      <div class="col-md-4 d-flex ftco-animate mb-3">
+        <a href="https://www.linkedin.com/posts/rajeev-tiwari123_pythonzilla-codeclash-programmingwar-activity-7339001879323959296-Qjpf" 
+           target="_blank" 
+           class="blog-entry justify-content-end shadow-lg" 
+           style="background: rgba(0, 0, 0, 0.75); border-radius: 15px; text-decoration: none;">
+          <div class="block-20 zoom-effect" style="background-image: url('images/Monsterverse1.png'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="text mt-2 d-block px-3 pb-3">
+            <h3 class="heading text-warning font-weight-bold">Ghidorah vs Godzilla: Titans of the Programming Monsterverse</h3>
+            <p class="text-light" style="font-size: 14px;">An epic war between ancient power and modern agility — the greatest clash in the Programming Monsterverse!🌀</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- BI Tools -->
+      <div class="col-md-4 d-flex ftco-animate mb-3">
+        <a href="https://www.linkedin.com/posts/rajeev-tiwari123_data-tools-meet-the-wild-power-bi-excel-activity-7338090683028713472-2V0s" 
+           target="_blank" 
+           class="blog-entry justify-content-end shadow-lg" 
+           style="background: rgba(0, 0, 0, 0.75); border-radius: 15px; text-decoration: none;">
+          <div class="block-20 zoom-effect" style="background-image: url('images/BI Tools.png'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="text mt-2 d-block px-3 pb-3">
+            <h3 class="heading text-warning font-weight-bold">Where Data Trembles, Jaguar Roars—That’s Power BI</h3>
+            <p class="text-light" style="font-size: 14px;">🔥 In the wild jungle of HR data, Power BI, Excel, SQL, and DAX rise as ruthless hunters — taking down beasts like Age, Tenure, Retirement, and Salary. ⚔️ Armed with logic and visuals, they slash through chaos into insights.</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Advanced Excel -->
+      <div class="col-md-4 d-flex ftco-animate mb-3">
+        <a href="https://www.linkedin.com/in/your-post-link3" target="_blank" 
+           class="blog-entry justify-content-end shadow-lg" 
+           style="background: rgba(0, 0, 0, 0.75); border-radius: 15px; text-decoration: none;">
+          <div class="block-20 zoom-effect" style="background-image: url('images/Skull Island.jfif'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="text mt-2 d-block px-3 pb-3">
+            <h3 class="heading text-white font-weight-bold">Kong vs Skullcrawler</h3>
+            <p class="text-light" style="font-size: 14px;">
+🦍 Kong vs Skullcrawler, Excel edition!  
+With formulas, functions, and fierce pivots — tame the wildest datasets like a true king.
+</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row d-flex mb-3">
+
+      <!-- IITG Data Analytics -->
+      <div class="col-md-4 d-flex ftco-animate mb-3">
+        <a href="https://www.linkedin.com/in/your-post-link4" target="_blank" 
+           class="blog-entry justify-content-end shadow-lg" 
+           style="background: rgba(0, 0, 0, 0.75); border-radius: 15px; text-decoration: none;">
+          <div class="block-20 zoom-effect" style="background-image: url('images/Godzilla X Kong.jfif'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="text mt-2 d-block px-3 pb-3">
+            <h3 class="heading text-white font-weight-bold">Godzilla x Kong: The New Empire (2024) – Skar King introduced</h3>
+            <p class="text-light" style="font-size: 14px;">In this Skar-King-powered analytics empire, we battle wild data with titan tools like SQL, Excel, and Power BI — insight reigns supreme! 👑📊</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- MS Access Projects -->
+      <div class="col-md-4 d-flex ftco-animate mb-3">
+        <a href="https://www.linkedin.com/in/your-post-link5" target="_blank" 
+           class="blog-entry justify-content-end shadow-lg" 
+           style="background: rgba(0, 0, 0, 0.75); border-radius: 15px; text-decoration: none;">
+          <div class="block-20 zoom-effect" style="background-image: url('images/Rampage.jfif'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="text mt-2 d-block px-3 pb-3">
+            <h3 class="heading text-white font-weight-bold">Rampage</h3>
+<p class="text-light" style="font-size: 14px;">
+🌪️Inspired by Rampage (2018), this Access project unleashes Rock-level chaos cleanup — tame wild data giants and dominate every messy table.
+</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Tally Prime + GST -->
+      <div class="col-md-4 d-flex ftco-animate mb-3">
+        <a href="https://www.linkedin.com/in/your-post-link6" target="_blank" 
+           class="blog-entry justify-content-end shadow-lg" 
+           style="background: rgba(0, 0, 0, 0.75); border-radius: 15px; text-decoration: none;">
+          <div class="block-20 zoom-effect" style="background-image: url('images/Titans.jpeg'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="text mt-2 d-block px-3 pb-3">
+            <h3 class="heading text-white font-weight-bold">Titans of Finance: Godzilla to Mechagodzilla</h3>
+<p class="text-light" style="font-size: 14px;">
+🧾 In the monsterverse of taxation, Tally Prime handles all — from Skar King's chaos to Shimo's freeze.<br>
+🔧 Rule with logic, slay with ledgers — complete accounting cycle under one roof.
+</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Programming Apocalypse Title Section CSS -->
+<style>
+  .gradient-programming-apocalypse {
+    background: linear-gradient(90deg, aqua, mediumspringgreen);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+
+  .normal-emoji {
+    color: initial;
+    font-size: inherit;
+    margin-left: 4px;
+  }
+
+  .zoom-effect:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+  }
+</style>
 
 <!-- My Certificates Title Section start -->
 <section class="ftco-section" id="certificates-section">
