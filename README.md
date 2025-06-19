@@ -21,4 +21,3 @@ You can also create your personal website by following this video and adding you
 
 ## 🖼️ Website Preview
 
-![Website Screenshot 1](Website.png)
