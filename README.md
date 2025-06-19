@@ -4,7 +4,6 @@ Welcome to my official website.
 🔗 [rajeevgit8055hub.github.io/rajeevtiwari.github.io](https://rajeevgit8055hub.github.io/rajeevtiwari.github.io)
 
 🚀 I’m thrilled to announce the successful launch of my official website!
-🔗 rajeevgit8055hub.github.io/rajeevtiwari.github.io
 
 This platform is more than just a digital profile — it’s a meaningful reflection of my transition from a humanities background to a data-driven professional path. Through this website, I aim to present not only my technical growth but also the mindset, effort, and passion behind the journey.
 
