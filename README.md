@@ -205,5 +205,5 @@ Thanks for exploring! I look forward to your feedback, support, and future colla
 ---
 
 ## 🖼️ Website Preview
-![My Website Preview](My%20Website.png)
-![Alternate Website Preview](Website1%20.png)
+![MyWebsite – Preview](My%20Website.png)
+![Website – Main Preview](Web%20site.png)
