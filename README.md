@@ -1,7 +1,7 @@
 # 🌐 Rajeev Tiwari | Official Website
 
 Welcome to my official website. 
-🔗 [rajeevgit8055hub.github.io/rajeevtiwari.github.io](https://rajeevgit8055hub.github.io/rajeevtiwari.github.io)
+🌐 [rajeevgit8055hub.github.io/rajeevtiwari.github.io](https://rajeevgit8055hub.github.io/rajeevtiwari.github.io)
 
 ---
 
