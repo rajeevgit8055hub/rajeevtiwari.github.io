@@ -28,10 +28,10 @@ This platform is more than just a digital profile — it’s a meaningful reflec
 
 Here, you’ll find a curated showcase of:
 
-🎓 My academic achievements and technical certifications
-💡 My evolving skills in Excel, SQL, Power BI, Power Query, Access, Python, and more
-🛠️ Real-world projects that demonstrate hands-on problem-solving
-🎨 Creative coding experiments that blend logic with design
+- 🎓 My academic achievements and technical certifications
+- 💡 My evolving skills in Excel, SQL, Power BI, Power Query, Access, Python, and more
+- 🛠️ Real-world projects that demonstrate hands-on problem-solving
+- 🎨 Creative coding experiments that blend logic with design
 
 As an enthusiastic and consistent learner, I’ve built this website as a step toward enhancing my visibility, sharing my progress, and connecting with like-minded professionals. It stands as both a resume in action and a canvas of my continuous learning.
 
