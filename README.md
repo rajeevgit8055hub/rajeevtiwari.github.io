@@ -117,7 +117,6 @@ I believe education is both formal and ongoing. Here's a snapshot of my academic
 - 🖥️ **CCC (NIELIT)** – Strong foundation in digital literacy and productivity tools.
 - 🗄️ **SQL (PostgreSQL)** – Skilled in database management, querying, and data analysis.
 - 📊 **Power BI** – Proficient in building interactive dashboards and data visualizations.
-- 📈 **Tableau** – Creating insightful dashboards and visual storytelling with data.
 - 🐍 **Python** – Learning for data cleaning, automation, and scripting tasks.
 
 ---
@@ -126,7 +125,7 @@ I believe education is both formal and ongoing. Here's a snapshot of my academic
 
 Real learning comes from doing. My portfolio includes hands-on, practical projects in a variety of tools:
 
-### 🔍 SQL Projects
+### 🗄️ SQL Projects
 
 - **SQL-Project-on-Online-Book-store** – SQL queries on book inventory, orders, and customers.  
 - **NETFLIX-Data-SQL-Analysis** – Analysis of movies, users, and viewing patterns.  
@@ -138,12 +137,12 @@ Real learning comes from doing. My portfolio includes hands-on, practical projec
 - **E-commerce-Sales-Dashboard-Analysis** – Tracking sales trends and KPIs.  
 - **Retail-Sales-Dashboard-Analysis** – Store performance and product analysis.  
 
-### 🔁 Power Query Projects
+### ⚡ Power Query Projects
 
 - **Power_Query-Messy-Rows-Cleaning-Project** – Cleaning and restructuring messy datasets.  
 - **Unified-Multi-Extension-Folder-Based-Data-Cleaning** – Combining and cleaning multi-format files.  
 
-### 🧩 Access Database Projects
+### 🛢️ Access Database Projects
 
 - **SmartBite-Online-Food-Delivery-DBMS** – Database for food orders, customers, and delivery tracking.  
 
@@ -154,11 +153,11 @@ Real learning comes from doing. My portfolio includes hands-on, practical projec
 - **Amazon-Global-Business-Analytics** – Global business KPIs and performance monitoring.  
 - **Blinkit-Grocery-Analysis** – Grocery sales and demand pattern analysis.  
 
-### 📈 Tableau
+### 📉 Tableau
 
 - **HSBC-Strategic-Stakeholder-Intelligence** – Insights on HSBC stakeholders and decision-making.  
 
-### 🌌 HTML/CSS/JavaScript Projects
+### 📝-HTML/ 🎨-CSS/ 🛠️-JavaScript Projects
 
 - **Dynamic-Neon-Glow-Website (rajeevtiwari.github.io)** – Personal portfolio website with glowing effects.  
 - **3D-Solar-System-Interactive-Animation** – An immersive cosmic model with rotating planets & interactive orbits.
@@ -166,7 +165,7 @@ Real learning comes from doing. My portfolio includes hands-on, practical projec
 
   A creative, animated layout with orbiting planets, falling stars, and galaxy visuals.
 
-### 🐍 Python Scripts
+### 🐍 Python
 
 - **Data Cleaning with pandas**
 - **Pattern Printing & Loops**
