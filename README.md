@@ -161,9 +161,7 @@ Real learning comes from doing. My portfolio includes hands-on, practical projec
 
 - **Dynamic-Neon-Glow-Website (rajeevtiwari.github.io)** – Personal portfolio website with glowing effects.  
 - **3D-Solar-System-Interactive-Animation** – An immersive cosmic model with rotating planets & interactive orbits.
-- **LoveForever-A-Heartfelt-Digital-Promise** – A heartfelt digital creation symbolizing love & togetherness. 
-
-  A creative, animated layout with orbiting planets, falling stars, and galaxy visuals.
+- **LoveForever-A-Heartfelt-Digital-Promise** – A heartfelt digital creation symbolizing love & togetherness.
 
 ### 🐍 Python
 
