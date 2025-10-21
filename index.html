@@ -689,7 +689,7 @@
       <div class="col-md-7 heading-section text-center ftco-animate">
         <h1 class="big big-2">Skills & Tools</h1>
         <h2 class="mb-3">
-          <span class="gradient-teal-red">Skills & Tools</span><span class="normal-color">💻⚙️</span>
+          <span class="gradient-lime-red">Skills & Tools</span><span class="normal-color">💻⚙️</span>
         </h2>
         <p>These are some of the skills I've been learning & gradually improving through practice and real-world applications.</p>
       </div>
@@ -736,7 +736,7 @@
 <!-- Skill Styles CSS -->
 <style>
   /* Gradient text (optional use) */
-  .gradient-teal-red {
+  .gradient-lime-red {
     background: linear-gradient(90deg, lime, red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -797,32 +797,54 @@
 </style>
 <!-- Skills Section End -->
 <br>
-<!-- Marquee or tools icons start -->
-<marquee behavior="scroll" direction="left" scrollamount="6">
-  <!-- Replace with your own skill SVGs or image paths -->
-  <img src="images/Word.svg" alt="Word" width="40" style="margin: 0 20px;">
-  <img src="images/PowerPoint.svg" alt="PowerPoint" width="40" style="margin: 0 20px;">
-  <img src="images/Outlook.svg" alt="Outlook" width="40" style="margin: 0 20px;">
-  <img src="images/Publisher.svg" alt="Publisher" width="40" style="margin: 0 20px;">
-  <img src="images/OneNote.svg" alt="OneNote" width="40" style="margin: 0 20px;">
-  <img src="images/PostgreSQL.svg" alt="PostgreSQL" width="40" style="margin: 0 20px;">
-  <img src="images/Canva.svg" alt="Canva" width="40" style="margin: 0 20px;">
-  <img src="images/HTML5.svg" alt="HTML%" width="40" style="margin: 0 20px;">
-  <img src="images/CSS.svg" alt="CSS" width="30" style="margin: 0 20px;">
-  <img src="images/CHMT.svg" alt="CHMT" width="40" style="margin: 0 20px;">
-  <img src="images/VBA.png" alt="VBA" width="40" style="margin: 0 20px;">
-  <img src="images/Git.svg" alt="Git" width="40" style="margin: 0 20px;">
-  <img src="images/Gitcolor.png" alt="Gitcolor" width="40" style="margin: 0 20px;">
-  <img src="images/Office_365.svg" alt="Office_365" width="30" style="margin: 0 20px;">
-  <img src="images/LinkedIn.svg" alt="Git" width="40" style="margin: 0 20px;">
-  <img src="images/Gmail.svg" alt="Gmail" width="40" style="margin: 0 20px;">
-  <img src="images/Notebook LM.svg" alt="NotebookLM" width="40" style="margin: 0 20px;">
-  <img src="images/Gemini.svg" alt="Gemini" width="40" style="margin: 0 20px;">
-  <img src="images/GeminiStar.svg" alt="GeminiStar" width="40" style="margin: 0 20px;">
-  <img src="images/Deepseek.svg" alt="Deepseek" width="40" style="margin: 0 20px;">
-  <img src="images/Perplexity.svg" alt="Perplexity" width="40" style="margin: 0 20px;">
-  <img src="images/VS Code.svg" alt="VS" width="40" style="margin: 0 20px;">
-  <img src="images/Copilot.svg" alt="Copilot" width="40" style="margin: 0 20px;">
+
+<!-- Marquee Running Skills Icons Start -->
+<style>
+  .skills-marquee {
+    display: flex;
+    align-items: center;
+    height: 55px;             /* thoda zyada height for perfect fit */
+    overflow: hidden;
+  }
+
+  .skills-marquee img {
+    width: 40px;              /* balanced small icon size */
+    height: auto;             /* keeps SVG proportion correct */
+    margin: 0 18px;           /* extra space between icons */
+    vertical-align: middle;
+    transition: transform 0.25s ease, filter 0.25s ease;
+    filter: brightness(0.95);
+  }
+
+  .skills-marquee img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.1);
+  }
+</style>
+
+<marquee class="skills-marquee" behavior="scroll" direction="left" scrollamount="7">
+  <img src="images/Word.svg" alt="Word">
+  <img src="images/PowerPoint.svg" alt="PowerPoint">
+  <img src="images/Outlook.svg" alt="Outlook">
+  <img src="images/Publisher.svg" alt="Publisher">
+  <img src="images/OneNote.svg" alt="OneNote">
+  <img src="images/PostgreSQL.svg" alt="PostgreSQL">
+  <img src="images/Canva.svg" alt="Canva">
+  <img src="images/HTML5.svg" alt="HTML5">
+  <img src="images/CSS.svg" alt="CSS">
+  <img src="images/VBA.png" alt="VBA">
+  <img src="images/Git.svg" alt="Git">
+  <img src="images/Gitcolor.png" alt="Gitcolor">
+  <img src="images/Office_365.svg" alt="Office_365">
+  <img src="images/Gmail.svg" alt="Gmail">
+  <img src="images/Notebook LM.svg" alt="NotebookLM">
+  <img src="images/Gemini.svg" alt="Gemini">
+  <img src="images/GeminiStar.svg" alt="GeminiStar">
+  <img src="images/Deepseek.svg" alt="Deepseek">
+  <img src="images/Perplexity.svg" alt="Perplexity">
+  <img src="images/VS Code.svg" alt="VSCode">
+  <img src="images/Copilot.svg" alt="Copilot">
+  <!-- <img src="images/LinkedIn.svg" alt="LinkedIn"> -->
   <!-- <img src="images/Coca Cola.svg" alt="Git" width="40" style="margin: 0 20px;"> -->
   <!-- <img src="images/X.svg" alt="Git" width="40" style="margin: 0 20px;"> -->
   <!-- <img src="images/Yamaha.svg" alt="Git" width="40" style="margin: 0 20px;"> -->
@@ -834,8 +856,8 @@
   <!-- <img src="images/LookerG.svg" alt="LookerG" width="40" style="margin: 0 20px;"> -->
   <!-- <img src="images/looker.svg" alt="looker" width="40" style="margin: 0 20px;"> -->
   <!-- <img src="images/Google Analytics.svg" alt="Google Analytics" width="40" style="margin: 0 20px;"> -->
-</marquee> 
-<!-- Marquee or tools icons end -->
+</marquee>
+<!-- Running Skills Icons End -->
 
 <!-- Resume & Experience Section Start -->
 <section class="ftco-section ftco-no-pb" id="Resume-section">
@@ -1440,8 +1462,8 @@
 <!-- Project Snapshot Marquee Start -->
 <style>
   marquee img {
-    width: 300px;         /* slightly smaller width */
-    height: 200px;        /* proportionally smaller height */
+    width: 360px;         /* slightly smaller width */
+    height: 210px;        /* proportionally smaller height */
     margin: 0 25px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -1480,7 +1502,7 @@
   <img src="images/Blinkit1.png">
 </marquee>
 <!-- Project Snapshot Marquee End -->
-<br><br><br><br><br>
+<br><br><br><br>
 
 <!-- Projects on github and linkedin start -->
 <div style="width: 100vw; margin-left: calc(-50vw + 50%);">
