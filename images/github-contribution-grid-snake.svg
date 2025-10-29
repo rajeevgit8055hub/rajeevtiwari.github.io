@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="848" height="128" viewBox="0 0 848 128">
+  <defs>
+    <!-- base cell color -->
+    <linearGradient id="baseGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0b0f13"/>
+    </linearGradient>
+
+    <!-- animated purple wave gradient -->
+    <linearGradient id="wave" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#6b21a8" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#9b5cff" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#6b21a8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#6b21a8" stop-opacity="0"/>
+      <!-- animate the gradient's position by shifting the gradientTransform -->
+      <animate attributeName="gradientTransform"
+               dur="5s"
+               repeatCount="indefinite"
+               from="translate(-2,0)"
+               to="translate(2,0)"/>
+    </linearGradient>
+
+    <!-- small highlight gradient for glowing edges -->
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#6b21a8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <style type="text/css"><![CDATA[
+      .cell { rx:2; ry:2; }
+      .shadow { filter: drop-shadow(0 1px 1px rgba(0,0,0,0.6)); }
+    ]]></style>
+  </defs>
+
+  <!-- background transparent (no rect) so it blends into README background -->
+
+  <!-- grid parameters -->
+  <g id="grid" transform="translate(10,10)">
+    <!-- draw 7 rows x 52 cols -->
+    <!-- cellSize = 12, gap = 4 -->
+    <!-- we'll draw base cells and overlay a rect filled with the animated gradient clipped to cells -->
+    <g id="cells">
+      <!-- base cells -->
+      <!-- generate with simple loops conceptually; here explicit generation via JS would be easier,
+           but for portability we render cells using nested placements -->
+    </g>
+
+    <!-- Instead of writing 364 rects manually, we render them procedurally using an embedded <g> of repeated patterns -->
+    <!-- Create a single cell and reuse with <use> and transforms -->
+    <rect id="cellTemp" class="cell shadow" width="12" height="12" fill="url(#baseGrad)"/>
+
+    <!-- place cells using multiple <use> with transforms -->
+    <!-- We'll create columns by repeating translateX for each column and rows by translateY -->
+    <!-- 52 columns -->
+    <g id="gridCells">
+      <!-- Column 0 -->
+      <!-- We'll programmatically place using repeated elements. For static SVG file we place with repeated <use> -->
+    </g>
+  </g>
+
+  <!-- Instead of literal repetition (which would be long), we simulate the grid with a pattern fill rectangle sized to the grid
+       and overlay the animated wave on top, masked to cell shapes (constructed via pattern). -->
+
+  <!-- Create pattern of small rounded rects -->
+  <defs>
+    <pattern id="cellPattern" patternUnits="userSpaceOnUse" width="16" height="16">
+      <!-- 12x12 cell inside 16x16 tile (12 cell + 4 gap) -->
+      <rect x="0" y="0" width="12" height="12" rx="2" ry="2" fill="url(#baseGrad)"/>
+    </pattern>
+
+    <!-- mask built from same pattern so wave only appears where cells are -->
+    <mask id="cellMask">
+      <rect x="0" y="0" width="832" height="108" fill="white"/>
+      <!-- overlay transparent rectangles to create gaps (we'll approximate by tiling the cells as white filled) -->
+      <!-- using pattern inside mask -->
+      <rect x="0" y="0" width="832" height="108" fill="url(#cellPattern)"/>
+    </mask>
+  </defs>
+
+  <!-- draw the tiled cells block -->
+  <g transform="translate(10,10)">
+    <rect width="832" height="108" fill="url(#cellPattern)"/>
+    <!-- animated wave overlay clipped/masked to the pattern -->
+    <rect width="832" height="108" fill="url(#wave)" mask="url(#cellMask)" />
+    <!-- subtle glow highlight moving slightly to enhance snake feel -->
+    <rect width="832" height="108" fill="url(#glow)" opacity="0.0">
+      <animate attributeName="opacity" values="0.0;0.45;0.0" dur="5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" from="-300 0" to="300 0" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- caption (optional, invisible by default) -->
+  <text x="12" y="118" font-family="Inter, Roboto, Arial, sans-serif" font-size="10" fill="#9b5cff" opacity="0.0">
+    Contribution Grid Snake — rajeevgit8055hub
+  </text>
+</svg>
