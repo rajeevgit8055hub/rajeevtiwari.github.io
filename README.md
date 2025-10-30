@@ -208,8 +208,17 @@ Then let’s connect:
 
 ---
 
-## <span id="website-preview">🖼️ Website Preview</span> 
+# 💻⚙️ Website Creation — Behind the Build
 
-![Website – Main Preview](Website.png)
+![Building the Website – Process Preview](WebDev.gif)
+![Building the Website – Process Preview](WebDev1.gif)
+
+*Visual: Step-by-step design, code-in-action, layout adjustments, and live structure setup.*
+
+# 🌐 Website — Ready to Launch
+
+![Final Website – Live Preview](Technology.gif)
+
+*Visual: Fully designed interface with smooth interactions and final live preview.*
 
 ---
