@@ -211,12 +211,14 @@ Then let’s connect:
 ## <span id="project-preview">📸 Project Overview</span> 
 
 **💻⚙️ Website Creation — Behind the Build**
+
 *Step-by-step design, code-in-action, layout adjustments, and live structure setup.*
 
 ![Building the Website – Process Preview](WebDev.gif)
 ![Building the Website – Process Preview](WebDev1.gif)
 
 **🌐 Website — Ready to Launch**
+
 *Fully designed interface with smooth interactions and final live preview.*
 
 ![Final Website – Live Preview](Technology.gif)
