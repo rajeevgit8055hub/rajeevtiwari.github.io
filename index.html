@@ -34,8 +34,45 @@
 
     <style>
 
-       /* web network code start */
-       /* Full-screen fixed background behind all content */
+  /* ---------- TIM TIM TWINKLING STAR EFFECT ---------- */
+.stars, .stars2, .stars3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-repeat: repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.stars {
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  animation: twinkling 8s linear infinite;
+  opacity: 0.6;
+}
+
+.stars2 {
+  background-image: url("https://www.transparenttextures.com/patterns/tiny-cross-hatch.png");
+  animation: twinkling 12s linear infinite;
+  opacity: 0.4;
+}
+
+.stars3 {
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  animation: twinkling 20s linear infinite;
+  opacity: 0.2;
+}
+
+@keyframes twinkling {
+  0% { opacity: 0.3; }
+  50% { opacity: 0.9; }
+  100% { opacity: 0.3; }
+}
+  
+    /* web network code start */
+    /* Full-screen fixed background behind all content */
   #particles-js {
     position: fixed;
     top: 0;
@@ -264,6 +301,11 @@
   </head>
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+<!-- Background stars -->
+<div class="stars"></div>
+<div class="stars2"></div>
+<div class="stars3"></div>
     
   <!-- Background Particle Canvas starts-->
   <div id="particles-js"></div>
@@ -1211,7 +1253,7 @@
           <a href="https://github.com/rajeevgit8055hub/SQL-Project-on-Online-Book-store" class="block-20 zoom-effect" style="background-image: url('images/Bookstore.png'); height: 250px; background-size: cover; background-position: center;"></a>
           <div class="text mt-3 float-right d-block">
             <h3 class="heading">
-              <a href="https://github.com/rajeevgit8055hub/SQL-Project-on-Online-Book-store">Online Bookstore SQL Data Analysis</a>
+              <a href="https://github.com/rajeevgit8055hub/SQL-Project-on-Online-Book-store" target="_blank" style="text-decoration: none; color:#007bff">Online Bookstore SQL Data Analysis↗</a>
             </h3>
             <p>A complete SQL-based data analysis project on a fictional online bookstore using PostgreSQL. This project demonstrates 
               how to clean, query, and analyze real-world datasets to extract business insights such as sales trends, revenue, 
@@ -1227,7 +1269,7 @@
           <a href="https://github.com/rajeevgit8055hub/Power-Query-Projects" class="block-20 zoom-effect" style="background-image: url('images/Power Query.jpg'); height: 250px; background-size: cover; background-position: center;"></a>
           <div class="text mt-3 float-right d-block">
             <h3 class="heading">
-              <a href="https://github.com/rajeevgit8055hub/Power-Query-Projects">Cleaned & Refined Messy Rows Dataset: Powery Query</a>
+              <a href="https://github.com/rajeevgit8055hub/Power-Query-Projects" target="_blank" style="text-decoration: none; color:#007bff">Cleaned & Refined Messy Rows Dataset↗</a>
             </h3>
             <p>This Power Query project focused on cleaning and transforming messy, unstructured business data efficiently and
                effectively. It involved fixing duplicate columns, merged fields, and null values. Techniques like column splitting 
@@ -1243,7 +1285,7 @@
           <a href="https://github.com/rajeevgit8055hub/Hospital-Emergency-Room-Dashboard" class="block-20 zoom-effect" style="background-image: url('images/MIS Projects.jpg'); height: 250px; background-size: cover; background-position: center;"></a>
           <div class="text mt-3 float-right d-block">
             <h3 class="heading">
-              <a href="https://github.com/rajeevgit8055hub/Hospital-Emergency-Room-Dashboard">Hospital Emergency Room Dashboard </a>
+              <a href="https://github.com/rajeevgit8055hub/Hospital-Emergency-Room-Dashboard" target="_blank" style="text-decoration: none; color:#007bff">Hospital Emergency Room Dashboard↗</a>
             </h3>
             <p>My first Excel MIS Dashboard project analyzing Hospital ER performance. Built using Excel tools like Pivot Tables, 
               Sparklines, Conditional Formatting, and Charts to track patient count, wait times, referrals, etc. It also helps identify
@@ -1259,7 +1301,7 @@
           <a href="https://github.com/rajeevgit8055hub/SmartBite-Online-Food-Delivery-DBMS" class="block-20 zoom-effect" style="background-image: url('images/SmartBite- Online Food Delivery.png'); height: 250px; background-size: cover; background-position: center;"></a>
           <div class="text mt-3 float-right d-block">
             <h3 class="heading">
-              <a href="https://github.com/rajeevgit8055hub/SmartBite-Online-Food-Delivery-DBMS">🍽️SmartBite – Online Food Delivery DBMS </a>
+              <a href="https://github.com/rajeevgit8055hub/SmartBite-Online-Food-Delivery-DBMS" target="_blank" style="text-decoration: none; color:#007bff">🍽️SmartBite – Online Food Delivery DBMS↗</a>
             </h3>
             <p>A complete company-level online food delivery database system fully built in Microsoft Access.
                 It manages real restaurant orders, customers, payments, cancellations, and revenue analytics.
@@ -1275,7 +1317,7 @@
           <a href="https://github.com/rajeevgit8055hub/rajeevtiwari.github.io" class="block-20 zoom-effect" style="background-image: url('images/Website.png'); height: 250px; background-size: cover; background-position: center;"></a>
           <div class="text mt-3 float-right d-block">
             <h3 class="heading">
-              <a href="https://github.com/rajeevgit8055hub/rajeevtiwari.github.io">Dynamic Neon Glow Website – Web Development Project</a>
+              <a href="https://github.com/rajeevgit8055hub/rajeevtiwari.github.io" target="_blank" style="text-decoration: none; color:#007bff">Dynamic Neon Glow Website – Web Development Project↗</a>
             </h3>
             <p>A fully responsive, modern personal website crafted with HTML, CSS, JavaScript and dynamic particle effects. It features
                neon-themed sections for About, Resume, Skills, Education, Projects, Certificates, and Contact. The design uses smooth 
@@ -1291,7 +1333,7 @@
           <a href="https://github.com/rajeevgit8055hub" class="block-20 zoom-effect" style="background-image: url('images/Github.png'); height: 250px; background-size: cover; background-position: center;"></a>
           <div class="text mt-3 float-right d-block">
             <h3 class="heading">
-              <a href="https://github.com/rajeevgit8055hub">Dynamic Developer Hub – My Complete Technical Journey</a>
+              <a href="https://github.com/rajeevgit8055hub" target="_blank" style="text-decoration: none; color:#007bff">Dynamic Developer Hub – My Complete Technical Journey↗</a>
             </h3>
             <p>This is my organized and evolving GitHub profile— a centralized hub for all my projects, repositories, academic 
               achievements, certifications, and key professional links, including LinkedIn. It reflects my clean coding standards, 
@@ -1307,7 +1349,7 @@
           <a href="https://github.com/rajeevgit8055hub/LoveForever-A-Heartfelt-Digital-Promise" class="block-20 zoom-effect" style="background-image: url('images/Ritu💕Awadhesh.png'); height: 250px; background-size: cover; background-position: center;"></a>
           <div class="text mt-3 float-right d-block">
             <h3 class="heading">
-              <a href="https://github.com/rajeevgit8055hub/LoveForever-A-Heartfelt-Digital-Promise">❤️ Love Forever - A Heartfelt Digital Promise ~ Ritu 💕 Awdhesh</a>
+              <a href="https://github.com/rajeevgit8055hub/LoveForever-A-Heartfelt-Digital-Promise" target="_blank" style="text-decoration: none; color:#007bff">❤️ Love Forever - A Heartfelt Digital Promise ~ Ritu💕Awdhesh↗</a>
             </h3>
             <p>This is a fully animated romantic night-sky project built using HTML, CSS, and JavaScript. It brings to life a dreamy
                love atmosphere for Ritu and Awdhesh, with a glowing moon, twinkling stars, floating hearts, and a falling star. 
@@ -1333,13 +1375,13 @@
         </div>
       </div> -->
 
-    <!-- MIS project 
+    <!-- MIS project --> 
     <div class="col-md-4 d-flex ftco-animate">
         <div class="blog-entry justify-content-end">
           <a href="https://github.com/rajeevgit8055hub/Retail-Sales-Dashboard-Analysis" class="block-20 zoom-effect" style="background-image: url('images/Retail.jpg'); height: 250px; background-size: cover; background-position: center;"></a>
           <div class="text mt-3 float-right d-block">
             <h3 class="heading">
-              <a href="https://github.com/rajeevgit8055hub/Retail-Sales-Dashboard-Analysis">Retail Sales Dashboard – MIS Project</a>
+              <a href="https://github.com/rajeevgit8055hub/Retail-Sales-Dashboard-Analysis" target="_blank" style="text-decoration: none; color:#007bff">Retail Sales Dashboard – MIS Project↗</a>
             </h3>
             <p>Retail Sales Dashboard built in Excel using Power Query, Pivot Tables, and Map Charts. This project analyzes a 5000-row
                retail dataset to solve real-world business problems through dynamic, slicer-controlled visual insights. It simulates a
@@ -1347,15 +1389,15 @@
                 segments, and locations.</p>
           </div>
         </div>
-      </div> -->
+      </div>
 
-         <!-- power BI project -->
+      <!-- power BI project -->
       <div class="col-md-4 d-flex ftco-animate">
         <div class="blog-entry justify-content-end">
           <a href="https://github.com/rajeevgit8055hub/Nescafe-Driving-Coffee-Sales-Excellence" class="block-20 zoom-effect" style="background-image: url('images/Coffee.png'); height: 250px; background-size: cover; background-position: center;"></a>
           <div class="text mt-3 float-right d-block">
             <h3 class="heading">
-              <a href="https://github.com/rajeevgit8055hub/Nescafe-Driving-Coffee-Sales-Excellence">Nescafe – Driving Coffee Sales Dashboard</a>
+              <a href="https://github.com/rajeevgit8055hub/Nescafe-Driving-Coffee-Sales-Excellence" target="_blank" style="text-decoration: none; color:#007bff">Nescafe – Driving Coffee Sales Dashboard↗</a>
             </h3>
             <p>Analyzed 118.94K Nescafe sales (April 2023) using Power BI to uncover trends in product performance, store contributions, 
               and customer behavior. Identified peak sales hours, weekday vs weekend patterns, and top-performing categories. Provided 
@@ -1385,7 +1427,7 @@
           <a href="https://github.com/rajeevgit8055hub/Motorola-Sales-BI-Dashboard-Analysis" class="block-20 zoom-effect" style="background-image: url('images/Motorola\ BI.png'); height: 250px; background-size: cover; background-position: center;"></a>
           <div class="text mt-3 float-right d-block">
             <h3 class="heading">
-              <a href="https://github.com/rajeevgit8055hub/Motorola-Sales-BI-Dashboard-Analysis">Motorola Sales Dashboard Analysis </a>
+              <a href="https://github.com/rajeevgit8055hub/Motorola-Sales-BI-Dashboard-Analysis" target="_blank" style="text-decoration: none; color:#007bff">Motorola Sales Dashboard Analysis↗</a>
             </h3>
             <p>This interactive Power BI dashboard is specifically built for Motorola to monitor and analyze sales performance across 
               multiple dimensions including city-wise trends, mobile model sales, payment methods, and customer satisfaction. 
@@ -1401,7 +1443,7 @@
           <a href="https://github.com/rajeevgit8055hub/NETFLIX-Data-SQL-Analysis" class="block-20 zoom-effect" style="background-image: url('images/Netflix\ Data.png'); height: 250px; background-size: cover; background-position: center;"></a>
           <div class="text mt-3 float-right d-block">
             <h3 class="heading">
-              <a href="https://github.com/rajeevgit8055hub/NETFLIX-Data-SQL-Analysis"> NETFLIX Data SQL Analysis</a>
+              <a href="https://github.com/rajeevgit8055hub/NETFLIX-Data-SQL-Analysis" target="_blank" style="text-decoration: none; color:#007bff"> NETFLIX Data SQL Analysis↗</a>
             </h3>
             <p>Analyzed a fictional NETFLIX dataset using PostgreSQL to uncover insights on movies, TV shows, genres, ratings,
                and countries. Using 15+ SQL queries, the project explored distribution, release trends, and diversity. 
@@ -1431,7 +1473,7 @@
           <a href="https://github.com/rajeevgit8055hub/Blinkit-Grocery-Analysis" class="block-20 zoom-effect" style="background-image: url('images/Blinkit.png'); height: 250px; background-size: cover; background-position: center;"></a>
           <div class="text mt-3 float-right d-block">
             <h3 class="heading">
-              <a href="https://github.com/rajeevgit8055hub/Blinkit-Grocery-Analysis">Blinkit Grocery Dashboard Analysis </a>
+              <a href="https://github.com/rajeevgit8055hub/Blinkit-Grocery-Analysis" target="_blank" style="text-decoration: none; color:#007bff">Blinkit Grocery Dashboard Analysis↗</a>
             </h3>
             <p>This project analyzes Blinkit’s grocery sales, customer satisfaction, and inventory trends using Power BI. 
               With advanced DAX calculations, interactive slicers, and KPI visuals, it highlights top-performing products, 
@@ -1441,13 +1483,13 @@
         </div>
       </div> 
 
-         <!-- Tableau project -->
+      <!-- Tableau project -->
       <div class="col-md-4 d-flex ftco-animate">
         <div class="blog-entry justify-content-end">
           <a href="https://github.com/rajeevgit8055hub/Strategic-Stakeholder-Intelligence" class="block-20 zoom-effect" style="background-image: url('images/TableauBI.png'); height: 250px; background-size: cover; background-position: center;"></a>
           <div class="text mt-3 float-right d-block">
             <h3 class="heading">
-              <a href="https://github.com/rajeevgit8055hub/Strategic-Stakeholder-Intelligence">HSBC Strategic Stakeholder Intelligence</a>
+              <a href="https://github.com/rajeevgit8055hub/Strategic-Stakeholder-Intelligence" target="_blank" style="text-decoration: none; color:#007bff">HSBC Strategic Stakeholder Intelligence↗</a>
             </h3>
             <p>This Tableau-based business intelligence solution provides a strategic, real-time view of stakeholder and insurer 
               performance by integrating KPI monitoring, visual analytics, and behavior tracking into one unified dashboard. 
@@ -1651,126 +1693,190 @@
 <section class="ftco-section pt-2 pb-2" id="Certification-section">
   <div class="container">
 
-    <!-- Row 1: CCC, Tally Prime, ADCA -->
+    <!-- Row 1 -->
     <div class="row d-flex mb-3">
 
-      <!-- Tally Prime -->
-      <div class="col-md-4 d-flex ftco-animate mb-3">
-        <div class="blog-entry justify-content-end">
-          <div class="block-20 zoom-effect" style="background-image: url('images/Tally PrimeGST.png'); height: 240px; background-size: cover; background-position: center;"></div>
-          <div class="text mt-2 d-block">
-            <h3 class="heading text-white">Tally Prime with GST</h3>
-            <p class="text-light">I successfully completed this certificate through a practical Skill Course designed and guided by Mr. 
-              Satish Dhawale Sir, covering core bookkeeping to advanced computerized accounting with Tally Prime. Completing this in Apr,
-               2024 strengthened my skills in managing accounts, preparing financial statements, and handling GST, TDS, TCS, VAT, and
-                Customs Duty — giving me real-world confidence to support modern finance and taxation tasks. This certificate enhances 
-                my hands-on expertise in accounting.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- ADCA -->
+     <!-- ADCA-->
       <div class="col-md-4 d-flex ftco-animate mb-3">
         <div class="blog-entry justify-content-end">
           <div class="block-20 zoom-effect" style="background-image: url('images/ADCA.png'); height: 240px; background-size: cover; background-position: center;"></div>
           <div class="text mt-2 d-block">
-            <h3 class="heading text-white">Advanced Diploma in Computer Application</h3>
-            <p class="text-light">I successfully completed this ADCA certificate through the Skill Course under the guidance of Mr. 
-              Satish Dhawale Sir. Completing it in October 2024 built my skills in operating systems, Microsoft Office, Tally Prime, 
-              Google Sheets, HTML, CSS, JavaScript, CHMT & VBA. This training helps me handle office tasks, MIS reporting, accounting 
-              & web design. It gives me the confidence to work as a versatile professional in today’s fast-paced digital world.</p>
+            <h3 class="heading text-white">
+             <a href="https://your-verification-link-here.com" target="_blank" style="text-decoration: none; color:#007bff">
+               Advance Diploma in Computer Application (ADCA)↗</a></h3>
           </div>
         </div>
       </div>
 
-      <!-- Micosorf office course -->
+      <!-- GitHub Basics -->
       <div class="col-md-4 d-flex ftco-animate mb-3">
         <div class="blog-entry justify-content-end">
-          <div class="block-20 zoom-effect" style="background-image: url('images/MS\ Office.png'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="block-20 zoom-effect" style="background-image: url('images/GitHub\ Basics.png'); height: 240px; background-size: cover; background-position: center;"></div>
           <div class="text mt-2 d-block">
-            <h3 class="heading text-white">Microsoft Office Crash Course</h3>
-            <p class="text-light">I successfully completed a comprehensive Microsoft Office Crash Course in July 2025 through a practical Skill Course 
-              designed and guided by Mr. Satish Dhawale Sir. This hands-on program covered Operating Systems, Computer Fundamentals, Word, Advanced Excel, 
-              PowerPoint, Access, and Outlook. It significantly strengthened my ability to handle real-world office tasks efficiently and boosted my
-              confidence in creating professional documents, reports, and impactful presentations.</p>
+            <h3 class="heading text-white">
+             <a href="https://simpli-web.app.link/e/Or633oKAmYb" target="_blank" style="text-decoration: none; color:#007bff">
+               GitHub Basics: Show Credential↗</a></h3>
+          </div>
+        </div>
+      </div>
+
+      <!--Microsoft Access Essential Training -->
+      <div class="col-md-4 d-flex ftco-animate mb-3">
+        <div class="blog-entry justify-content-end">
+          <div class="block-20 zoom-effect" style="background-image: url('images/Access\ Essential.png'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="text mt-2 d-block">
+            <h3 class="heading text-white">
+             <a href="https://your-verification-link-here.com" target="_blank" style="text-decoration: none; color:#007bff">
+               Microsoft Access Essential Training (Office 2024_LTSC)↗</a></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- SQL Analytics and BI on Databricks -->
+      <div class="col-md-4 d-flex ftco-animate mb-3">
+        <div class="blog-entry justify-content-end">
+          <div class="block-20 zoom-effect" style="background-image: url('images/Databricks\ SQL.png'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="text mt-2 d-block">
+            <h3 class="heading text-white">
+             <a href="https://simpli-web.app.link/e/koyAhfyBmYb" target="_blank" style="text-decoration: none; color:#007bff">
+               SQL Analytics and BI on Databricks↗</a></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Essentials of Data Visualization using MS Excel -->
+      <div class="col-md-4 d-flex ftco-animate mb-3">
+        <div class="blog-entry justify-content-end">
+          <div class="block-20 zoom-effect" style="background-image: url('images/Data\ Visualization\ using\ MS\ Excel.png'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="text mt-2 d-block">
+            <h3 class="heading text-white">
+             <a href="https://docs.uniathena.com/prod/course/certificate/124_1763028743_certificate.jpg" target="_blank" style="text-decoration: none; color:#007bff">
+               Essentials of Data Visualization using MS Excel↗</a></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Sheets - Advanced Topics -->
+      <div class="col-md-4 d-flex ftco-animate mb-3">
+        <div class="blog-entry justify-content-end">
+          <div class="block-20 zoom-effect" style="background-image: url('images/Google\ Sheets\ -\ Advanced\ Topics.png'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="text mt-2 d-block">
+            <h3 class="heading text-white">
+             <a href="https://simpli-web.app.link/e/tXlwquxjjYb" target="_blank" style="text-decoration: none; color:#007bff">
+               Google Sheets - Advanced Topics↗</a></h3>
           </div>
         </div>
       </div>
 
     </div>
 
-    <!-- Row 2: Excel, SQL, Power BI -->
+    <!-- Row 2 -->
     <div class="row d-flex justify-content-center">
 
-      <!-- Excel -->
+      <!-- Data Analysis with PostgreSQL -->
       <div class="col-md-4 d-flex ftco-animate mb-3">
         <div class="blog-entry justify-content-end">
-          <div class="block-20 zoom-effect" style="background-image: url('images/ChatGPT.png'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="block-20 zoom-effect" style="background-image: url('images/DA\ PostgreSQL.png'); height: 240px; background-size: cover; background-position: center;"></div>
           <div class="text mt-2 d-block">
-            <h3 class="heading text-white">ChatGPT in Excel</h3>
-            <p class="text-light">I successfully completed the ChatGPT in Excel course in July 2025 through the trusted Skill Course 
-              platform, guided by Mr. Satish Dhawale Sir. This innovative program taught me to use AI in Excel for creating formulas, 
-              automating tasks with VBA, and solving real-world data problems, boosting my speed, accuracy, and confidence. It has
-               opened new ways to work smarter and handle office tasks easily. I’m excited to apply these skills to real-world office
-                projects.</p>
+            <h3 class="heading text-white">
+             <a href="https://your-verification-link-here.com" target="_blank" style="text-decoration: none; color:#007bff">
+               Data Analysis with PostgreSQL↗</a></h3>
           </div>
         </div>
       </div>
 
-      <!-- SQL -->
+      <!-- Essentials of MS Excel - Formulas and Functions -->
       <div class="col-md-4 d-flex ftco-animate mb-3">
         <div class="blog-entry justify-content-end">
-          <div class="block-20 zoom-effect" style="background-image: url('images/SQL.png'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="block-20 zoom-effect" style="background-image: url('images/Essentials\ Excel.png'); height: 240px; background-size: cover; background-position: center;"></div>
           <div class="text mt-2 d-block">
-            <h3 class="heading text-white">SQL Micro Course</h3>
-            <p class="text-light">Completed SQL – Basic to Advanced Course (July 2025) from Skill Course under the guidance of Mr. Satish
-               Dhawale Sir. Learned core concepts like data types, DDL/DML, joins, subqueries, constraints, Operators, FOREIGN Key, and 
-               functions for applications. Covered advanced topics including views, indexing, procedures, and date functions for database
-                management. Built strong skills in writing optimized queries and managing relational databases confidently.</p>
+            <h3 class="heading text-white">
+             <a href="https://docs.uniathena.com/prod/course/certificate/814_1762676336_certificate.jpg" target="_blank" style="text-decoration: none; color:#007bff">
+              Essentials of MS Excel - Formulas and Functions↗</a></h3>
           </div>
         </div>
       </div>
 
-      <!-- Power BI -->
+      <!-- Excel Dashboard for Beginners -->
       <div class="col-md-4 d-flex ftco-animate mb-3">
         <div class="blog-entry justify-content-end">
-          <div class="block-20 zoom-effect" style="background-image: url('images/PowerBI.png'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="block-20 zoom-effect" style="background-image: url('images/Excel\ Dashboard.png'); height: 240px; background-size: cover; background-position: center;"></div>
           <div class="text mt-2 d-block">
-            <h3 class="heading text-white">Power BI Micro Course</h3>
-            <p class="text-light">Completed Power BI – Basic to Advanced Course (July 2025) from Skill Course under the guidance of Mr. Satish Dhawale Sir.
-               Learned core concepts like data loading, data modeling, Power Query, and DAX functions. 
-               Covered advanced topics including interactive dashboards, drillthrough, and performance optimization. 
-               Built strong skills in transforming raw data into actionable insights through dynamic, visually appealing reports. </p>
+            <h3 class="heading text-white">
+             <a href="https://simpli-web.app.link/e/2KbK36JscYb" target="_blank" style="text-decoration: none; color:#007bff">
+               Excel Dashboard for Beginners↗</a></h3>
           </div>
         </div>
       </div>
 
-      <!-- Power Query -->
+      <!-- Introduction to Business Communication -->
       <div class="col-md-4 d-flex ftco-animate mb-3">
         <div class="blog-entry justify-content-end">
-          <div class="block-20 zoom-effect" style="background-image: url('images/PowerQuery.png'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="block-20 zoom-effect" style="background-image: url('images/Business\ Communication.png'); height: 240px; background-size: cover; background-position: center;"></div>
           <div class="text mt-2 d-block">
-            <h3 class="heading text-white">Power Query Micro Course</h3>
-            <p class="text-light">Completed Power Query Corporate Training Masterclass (October 2025) from Skill Course under the guidance
-               of Mr. Satish Dhawale Sir, learning Power Query interface, data cleaning, error handling, and importing data from Excel,
-                CSV, Text, and Web, covering advanced topics like appending files, handling inconsistent datasets, applying 
-                transformations, building automated workflows, and gaining skills in transforming data into actionable insights for
-                 reporting.</p>
+            <h3 class="heading text-white">
+             <a href="https://simpli-web.app.link/e/RiZzAxALgYb" target="_blank" style="text-decoration: none; color:#007bff">
+               Introduction to Business Communication↗</a></h3>
           </div>
         </div>
       </div>
 
-     <!-- CCC -->
+      <!-- Introduction to Power Query in Excel Basics -->
       <div class="col-md-4 d-flex ftco-animate mb-3">
         <div class="blog-entry justify-content-end">
-          <div class="block-20 zoom-effect" style="background-image: url('images/CCC.png'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="block-20 zoom-effect" style="background-image: url('images/Power\ Query\ in\ Excel.png'); height: 240px; background-size: cover; background-position: center;"></div>
           <div class="text mt-2 d-block">
-            <h3 class="heading text-white">Course on Computer Concepts</h3>
-            <p class="text-light">Completing the CCC from NIELIT in June 2023 marked my first step into the exciting world of IT. 
-              This foundational course gave me practical skills in basic computing, Microsoft Office tools, email, and digital concepts 
-              — sparking my curiosity and inspiring me to keep learning and continuously growing. It set a strong base for exploring
-              advanced software, data skills, and real-world applications. This milestone keeps motivating me to upgrade my digital 
-              skills every single day.</p>
+            <h3 class="heading text-white">
+             <a href="https://simpli-web.app.link/e/1hTHLVqBmYb" target="_blank" style="text-decoration: none; color:#007bff">
+               Introduction to Power Query in Excel Basics↗</a></h3>
+          </div>
+        </div>
+      </div>
+
+     <!-- Introduction to Data Analytics -->
+      <div class="col-md-4 d-flex ftco-animate mb-3">
+        <div class="blog-entry justify-content-end">
+          <div class="block-20 zoom-effect" style="background-image: url('images/Introduction\ to\ Data\ Analytics.png'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="text mt-2 d-block">
+            <h3 class="heading text-white">
+             <a href="https://simpli-web.app.link/e/3pdOKncOhYb" target="_blank" style="text-decoration: none; color:#007bff">
+               Introduction to Data Analytics↗</a></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Analyst 101 -->
+      <div class="col-md-4 d-flex ftco-animate mb-3">
+        <div class="blog-entry justify-content-end">
+          <div class="block-20 zoom-effect" style="background-image: url('images/Data\ Analyst101.png'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="text mt-2 d-block">
+            <h3 class="heading text-white">
+             <a href="https://simpli-web.app.link/e/mklw1d0reYb" target="_blank" style="text-decoration: none; color:#007bff">
+               Data Analyst 101: Show Credential↗</a></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Power BI for Beginners -->
+      <div class="col-md-4 d-flex ftco-animate mb-3">
+        <div class="blog-entry justify-content-end">
+          <div class="block-20 zoom-effect" style="background-image: url('images/PowerBI\ Beginners.png'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="text mt-2 d-block">
+            <h3 class="heading text-white">
+             <a href="https://simpli-web.app.link/e/VLgIKIsleYb" target="_blank" style="text-decoration: none; color:#007bff">
+               Power BI for Beginners:Credential↗</a></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Basics of Data Visualization With Tableau -->
+      <div class="col-md-4 d-flex ftco-animate mb-3">
+        <div class="blog-entry justify-content-end">
+          <div class="block-20 zoom-effect" style="background-image: url('images/Data\ Visualization\ With\ Tableau.png'); height: 240px; background-size: cover; background-position: center;"></div>
+          <div class="text mt-2 d-block">
+            <h3 class="heading text-white">
+             <a href="https://docs.uniathena.com/prod/course/certificate/348_1763361663_certificate.jpg" target="_blank" style="text-decoration: none; color:#007bff">
+               Basics of Data Visualization With Tableau↗</a></h3>
           </div>
         </div>
       </div>
