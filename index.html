@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <style>
+  <style>
 
   /* GALAXY TWINKLING STAR EFFECT */
 .stars, .stars2, .stars3 {
@@ -71,8 +71,31 @@
   100% { opacity: 0.3; }
 }
   
-    /* web network code start */
-    /* Full-screen fixed background behind all content */
+/* Top Right Transparent Date-Time */
+.rt-date-time {
+  position: absolute;
+  top: 95px; /* adjust if navbar height differs */
+  right: 20px;
+  text-align: right;
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  color: teal; /* Your neon cyan theme color */
+  z-index: 10;
+  background: transparent;
+}
+
+.rt-date-time #current-date {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.rt-date-time #current-time {
+  font-size: 16px;
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+ /* web network code start */
+ /* Full-screen fixed background behind all content */
   #particles-js {
     position: fixed;
     top: 0;
@@ -302,7 +325,7 @@
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-<!-- Background stars -->
+<!-- GALAXY TWINKLING STAR EFFECT -->
 <div class="stars"></div>
 <div class="stars2"></div>
 <div class="stars3"></div>
@@ -414,6 +437,40 @@
       </div>
     </nav>
     <!-- menu bar end -->
+
+<!-- Date-Time display -->
+<div class="rt-date-time">
+  <div id="current-date"></div>
+  <div id="current-time"></div>   
+</div>
+
+<script>
+  function updateDateTime() {
+    const now = new Date();
+
+    const dateOptions = {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    };
+
+    const dateString = now.toLocaleDateString("en-US", dateOptions);
+
+    const timeString = now.toLocaleTimeString("en-US", {
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
+      hour12: true
+    });
+
+    document.getElementById("current-date").innerText = dateString;
+    document.getElementById("current-time").innerText = timeString;
+  }
+
+  setInterval(updateDateTime, 1000);
+  updateDateTime();
+</script>
 
     <!-- front page start -->
     <!-- Hero Section Start -->
@@ -2395,7 +2452,37 @@
 		 </div>
 </div> -->
 
-<!-- Find Me On section start-->
+<!-- Snake Animation Contribution Graph section title -->
+<div class="row justify-content-center mb-5 pb-3">
+  <div class="col-md-7 heading-section text-center ftco-animate">
+    <h1 class="big big-2">Snake Contribution</h1>
+    <h2 class="mb-4">
+      <span class="gradient-indigo-lime">GitHub Contribution Snake</span>
+      <span class="normal-emoji">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbG5sc3YzYXQ1ZzI1dzNqenQ1ZmxsZzE2dDlqdzZmZ3d5bW5jajl0MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/kEKcOWl8RMLde/giphy.webp" width="50">
+      </span>
+    </h2>
+    <p>This animated graph highlights my GitHub contributions, commits, and ongoing project activity.</p>
+  </div>
+</div>
+
+<!-- Snake Animation Contribution Graph -->
+<!-- <div style="text-align:center; margin-top:40px;">
+  <img src="https://raw.githubusercontent.com/rajeevgit8055hub/rajeevgit8055hub/output/github-snake-dark.svg"
+       alt="GitHub Snake Animation"
+       style="max-width: 100%; height: auto;">
+</div> -->
+
+<!-- Snake Animation Contribution Graph -->
+<div style="text-align:center; margin-top:40px;">
+  <a href="https://github.com/rajeevgit8055hub" target="_blank" style="display:inline-block;">
+    <img src="https://raw.githubusercontent.com/rajeevgit8055hub/rajeevgit8055hub/output/github-snake-dark.svg"
+         alt="GitHub Snake Animation"
+         style="max-width: 100%; height: auto; border: none;">
+  </a>
+</div>
+
+<!-- Find Me On section start -->
 <section class="ftco-section contact-section ftco-no-pb" id="social-section">
   <div class="container">
     <div class="row justify-content-center mb-5 pb-3">
