@@ -33,7 +33,6 @@
     <link rel="stylesheet" href="css/style.css">
 
   <style>
-
   /* GALAXY TWINKLING STAR EFFECT */
 .stars, .stars2, .stars3 {
   position: fixed;
@@ -1077,14 +1076,14 @@
 <!-- Resume Section and Download cv or resume button end -->
 <br><br><br><br>
 
-    <!-- experience section start -->
+    <!-- experience section start 
     <div class="container-fluid px-0">
     <div class="row justify-content-center mb-3 pb-2">
       <div class="col-md-7 heading-section text-center ftco-animate">
         <h1 class="big big-2">Experience</h1>
         <h2 class="mb-3">
           <span class="gradient-exp">Experience</span>
-          <span class="normal-color"><!--💼--><img src="images/Rocket.gif" alt="Experience" style="width:80px"></span>
+          <span class="normal-color"><!--💼-- <img src="images/Rocket.gif" alt="Experience" style="width:80px"></span>
         </h2>
         <p>I have worked in the Data Analytics domain across top companies and led impactful projects.</p>
       </div>
@@ -1124,9 +1123,9 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
-<!-- Gradient Style & css for Resume & Experience Headings --> 
+<!-- Gradient Style & css for Resume & Experience Headings -->
 <style>
   .gradient-red-aqua {
     background: linear-gradient(90deg, red, aqua);
@@ -1415,7 +1414,6 @@
           </div>
         </div>
       </div>
-
       
       <!-- Executive Business Presentation Vault -->
       <div class="col-md-4 d-flex ftco-animate">
@@ -1692,7 +1690,7 @@
 
 <!-- Projects on github and linkedin start -->
 <div style="width: 100vw; margin-left: calc(-50vw + 50%);">
-  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/Multicolor.gif); 
+  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/Repository2.gif); 
   padding: 40px 40px 60px 40px; position: relative; z-index: 1; width: 100%; background-size: cover; background-position: center;">
 
     <!-- 🟢 GitHub Section First -->
@@ -2235,6 +2233,136 @@
 }
 </style>
 <!-- Global Certifications Section end -->
+
+<br><br>
+<!-- Achievements & Stats Start -->
+<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+       <div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span class="gradient-text">Repositories</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="25">0</strong>
+                <span class="gradient-text">Certifications</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="300">0</strong>
+                <span class="gradient-text">LinkedIn Posts</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1825">0</strong>
+                <span class="gradient-text">GitHub commits</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<style>
+  /* ===============================
+   REMOVE FTCO BLACK / GREY BACKGROUNDS
+================================ */
+.ftco-counter,
+.ftco-counter.img,
+.counter-wrap,
+.block-18,
+.block-18 .text {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.ftco-counter::before,
+.ftco-counter.img::before {
+  display: none !important;
+}
+
+/* ===============================
+   COUNTER BOX (TRANSPARENT)
+================================ */
+.block-18 {
+  position: relative;
+  padding: 16px 14px;
+  max-width: 220px;
+  width: 100%;
+  text-align: center;
+  border-radius: 12px;
+
+  /* transparent box */
+  background: transparent !important;
+
+  /* soft shadow */
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* ===============================
+   GRADIENT BORDER
+================================ */
+.block-18::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;                 /* thin border */
+  border-radius: 12px;
+  background: linear-gradient(135deg, #7f00ff, #00c6ff);
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
+/* ===============================
+   TEXT STYLE
+================================ */
+.block-18 .number {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+}
+
+.block-18 span {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+/* ===============================
+   TEXT COLOR
+================================ */
+.gradient-text {
+  font-size: 24px;            
+  font-weight: 700;           
+  
+  /* Gradient color */
+  background: linear-gradient(135deg, magenta, aqua);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+</style>
+<!-- Achievements & Stats end -->
 
 <!-- Contact Me Section start-->
 <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
